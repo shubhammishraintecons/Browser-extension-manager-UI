@@ -98,3 +98,16 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+
+<!-- 📄 Explanation
+assets/images/: All icons and images used in the UI.
+components/Navbar/: The top bar with the logo, title, and settings icon.
+components/FilterBar/: The filter buttons (All, Active, Inactive).
+components/ExtensionCard/: Each extension’s card (icon, name, description, remove button, toggle).
+components/ExtensionList/: The grid or list that holds all the extension cards.
+components/ToggleSwitch/: The custom toggle switch for enabling/disabling extensions.
+data/extensions.json: Store extension data here for easy mapping and state management.
+styles/globals.css: For global styles, color variables, and resets.
+App.jsx: Main app layout, imports all components.
+main.jsx: Entry point. -->
