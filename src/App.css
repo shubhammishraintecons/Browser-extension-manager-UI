@@ -30,13 +30,26 @@
 
 Font */
 
-body{
+body.dark-mode{
   background: hsl(227, 75%, 14%);
+  color: white;
 }
-.bg-body-dark{
+
+body.light-mode {
+  background-color: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  color: #000000;
+}
+
+/* Optional: Navbar theming */
+body.dark-mode .bg-body-dark {
   background: hsl(225, 23%, 24%);
   border-radius: 15px;
   padding: 14px 10px;
+}
+
+body.light-mode .bg-body-dark {
+  background-color: hsl(227, 75%, 14%);
+  color: #000000;
 }
 
 .header-nav-margin{
@@ -105,12 +118,17 @@ body{
   border: none;
 }
 
-
+body.light-mode .btn-types{
+  color: #000000;
+}
+body.light-mode .btn-types:hover{
+  background-color: none;
+}
 
 .btn-types {
   background-color: transparent;
   color: #fff;
-  padding: 2px 16px;
+  padding: 11px 16px;
   border-radius: 8px;
   font-weight: 500;
   transition: all 0.3s ease;
