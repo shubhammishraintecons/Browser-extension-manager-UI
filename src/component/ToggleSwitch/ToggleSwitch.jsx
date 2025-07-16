@@ -1,9 +1,14 @@
-import React from 'react'
+// src/components/ToggleSwitch.jsx
+import React from "react";
+import "./ToggleSwitch.css";
 
-const ToggleSwitch = () => {
+const ToggleSwitch = ({isActive, handleToggle }) => {
   return (
-    <div>ToggleSwitch</div>
-  )
-}
+    <label className="switch">
+      <input type="checkbox" checked={isActive} onChange={handleToggle} />
+      <span className="slider round"></span>
+    </label>
+  );
+};
 
-export default ToggleSwitch
+export default ToggleSwitch;
